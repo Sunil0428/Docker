@@ -1,4 +1,5 @@
 FROM almalinux:9
-RUN mkdir /tmp/temp
-WORKDIR /tmp/temp
-RUN echo "Hello World"
+RUN mkdir /tmp/docker
+WORKDIR /tmp/docker
+RUN echo "Hello World" > hello.txt
+CMD ["sleep","200"]
