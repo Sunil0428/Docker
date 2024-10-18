@@ -1,5 +1,5 @@
 ARG version
-FROM almalinux:${version}
+FROM almalinux:${version:-9}
 ARG father="sunil"\
     mother="bhuvana"\
     daughter="darhana"
