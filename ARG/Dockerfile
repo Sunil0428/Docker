@@ -1,5 +1,5 @@
 FROM almalinux:9
-ENV father="sunil"\
+ARG father="sunil"\
     mother="bhuvana"\
     daughter="darhana"
 
