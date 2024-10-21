@@ -9,21 +9,21 @@ services:
    image: sunil0428/docker:1
    container_name: mysql    #--name mysql
    volumes:
-   -mysql:/var/lib/mysql   #-v mysql:/var/lib/mysql
+    -mysql:/var/lib/mysql   #-v mysql:/var/lib/mysql
 
    backend:
-   image: sunil0428/docker:2
-   container_name: backend
-   depend_on:
-   -mysql
+    image: sunil0428/docker:2
+    container_name: backend
+    depend_on:
+     -mysql
   
    frontend:
-   image: sunil0428/docker:3
-   container_name: frontend
-   ports:
-   -80:80
-   depend_on:
-   -backend
+    image: sunil0428/docker:3
+    container_name: frontend
+    ports:
+     -80:80
+    depend_on:
+     -backend
 
 
 
