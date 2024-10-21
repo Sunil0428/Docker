@@ -14,7 +14,7 @@ services:
    backend:
     image: sunil0428/docker:2
     container_name: backend
-    depend_on:
+    depends_on:
     - mysql
   
    frontend:
