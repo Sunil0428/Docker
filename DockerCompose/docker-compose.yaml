@@ -6,10 +6,10 @@ volumes:
 
 services:
    mysql:
-   image: sunil0428/docker:1
-   container_name: mysql    #--name mysql
-   volumes:
-    -mysql:/var/lib/mysql   #-v mysql:/var/lib/mysql
+    image: sunil0428/docker:1
+    container_name: mysql    #--name mysql
+    volumes:
+     -mysql:/var/lib/mysql   #-v mysql:/var/lib/mysql
 
    backend:
     image: sunil0428/docker:2
