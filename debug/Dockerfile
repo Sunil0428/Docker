@@ -1,4 +1,4 @@
 FROM almalinux:9
-RUN sudo yum install -y telnet
-RUN sudo yum install -y curl
+RUN sudo dnf install telnet -y
+RUN sudo dnf install curl -y
 CMD ["sleep","20000"]
